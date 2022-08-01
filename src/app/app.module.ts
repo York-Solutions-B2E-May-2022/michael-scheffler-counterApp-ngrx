@@ -27,7 +27,7 @@ import { CounterComponent } from './counter/counter.component';
     BrowserModule,
     AppRoutingModule,
     StoreModule.forFeature(COUNTER_STATE_NAME,reducer),
-    StoreModule.forRoot({}),
+    StoreModule.forRoot({}), //this was added to fix a "NullInjectorError: NullInjectorError: No provider for ReducerManager!" error message.
     BrowserAnimationsModule, 
     MatButtonModule, 
     MatDividerModule
